@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signUp">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="445dp"
+        android:layout_height="460dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/banner2" />
+
+    <Button
+        android:id="@+id/new_acc"
+        android:layout_width="294dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="@string/sign"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="488dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="348dp"
+        app:layout_constraintBottom_toTopOf="@+id/p1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/user2"
+        android:layout_width="332dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="@string/prompt_email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/pass2"
+        app:layout_constraintStart_toStartOf="@+id/pass2" />
+
+    <EditText
+        android:id="@+id/pass2"
+        android:layout_width="333dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="52dp"
+        android:ems="10"
+        android:hint="@string/Pass"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/new_acc"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/p1"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:layout_marginBottom="200dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pass2"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
